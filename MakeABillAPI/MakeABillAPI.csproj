@@ -4,5 +4,18 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MakeABill.Application\MakeABill.Application.csproj" />
+    <ProjectReference Include="..\MakeABill.Domain\MakeABill.Domain.csproj" />
+    <ProjectReference Include="..\MakeABill.Infraestructure\MakeABill.Infraestructure.csproj" />
+  </ItemGroup>
+
 
 </Project>

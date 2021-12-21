@@ -12,7 +12,7 @@ namespace MakeABill.Infraestructure.ServicesInjection
 {
     public static class ServicesExtensions
     {
-        public static void AddInfraestructure(IServiceCollection services, IConfiguration configuration)
+        public static void AddInfraestructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<MakeABillApiDbContext>(Op => Op.UseSqlServer(configuration.GetConnectionString("default"), x => x.MigrationsAssembly(typeof(MakeABillApiDbContext).Assembly.FullName)));
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
