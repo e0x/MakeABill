@@ -1,6 +1,6 @@
 ﻿using MakeABill.Application.Interfaces;
-using MakeABill.Infraestrecture.Context;
-using MakeABill.Infraestrecture.Data;
+using MakeABill.Infraestructure.Context;
+using MakeABill.Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

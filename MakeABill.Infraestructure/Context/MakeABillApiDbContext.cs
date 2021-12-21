@@ -4,8 +4,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using MakeABill.Infraestructure.TableConfig;
 
-namespace MakeABill.Infraestrecture.Context
+namespace MakeABill.Infraestructure.Context
 {
     public class MakeABillApiDbContext : IdentityDbContext<IdentityUser>
     {
@@ -22,6 +23,9 @@ namespace MakeABill.Infraestrecture.Context
             base.OnModelCreating(builder);
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             
+            
+
+
         }
         
 

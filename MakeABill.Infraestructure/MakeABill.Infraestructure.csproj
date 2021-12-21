@@ -5,16 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="TableConfig\Article.TableConfig.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Context\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="TableConfig\Article.TableConfig.cs" />
   </ItemGroup>
 
   <ItemGroup>

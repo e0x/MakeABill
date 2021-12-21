@@ -5,10 +5,10 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using MakeABill.Application.Interfaces;
-using MakeABill.Infraestrecture.Context;
+using MakeABill.Infraestructure.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace MakeABill.Infraestrecture.Data
+namespace MakeABill.Infraestructure.Data
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {

@@ -4,14 +4,16 @@ using MakeABill.Infraestructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MakeABill.Infraestructure.Migrations
 {
     [DbContext(typeof(MakeABillApiDbContext))]
-    partial class MakeABillApiDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211221214629_Fix_Article_entity_21_12_2021")]
+    partial class Fix_Article_entity_21_12_2021
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
